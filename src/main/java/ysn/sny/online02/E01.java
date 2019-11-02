@@ -1,12 +1,10 @@
-/*
- * Permita pasar de pulgadas a centímetros. Para ello, el programa solicitará al usuario que introduzca el número de pulgadas 
- * y a continuación mostrará cuantos centímetros son. (Nota: 1 pulgada son 2,54 cm).
- */
-package ysn.sny.online02;
 
+package ysn.sny.online02;
+import java.util.Scanner;
 /**
- *
+ * Este método lee un número en pulgadas y lo convierte a centímetros.
  * @author Yvon
+ * @version 1.0
  */
 public class E01 {
 
@@ -15,9 +13,16 @@ public class E01 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        Scanner resp = new Scanner(System.in);
+        double pulgadas = 0;
+        double centimetros = 0;
         
         System.out.println("Ejercicio cambio de pulgadas a centímetros");
+        System.out.println("==========================================");
         System.out.print("Ingrese cantidad en pulgadas: ");
+        pulgadas = resp.nextDouble(); 
+        centimetros = (pulgadas*2.54);
+        System.out.println( "Equivale a " + centimetros +" centímetros");
         
     }
     
